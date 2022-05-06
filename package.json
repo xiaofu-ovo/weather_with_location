@@ -1,0 +1,45 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@webpack-cli/generators": "^2.4.2",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "prettier": "^2.6.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "name": "weather_with_location",
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "dev": "webpack serve"
+  },
+  "main": "webpack.config.js",
+  "dependencies": {
+    "@babel/preset-react": "^7.16.7",
+    "antd": "^4.20.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-loadable": "^5.5.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaofu-ovo/weather_with_location.git"
+  },
+  "author": "huchen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaofu-ovo/weather_with_location/issues"
+  },
+  "homepage": "https://github.com/xiaofu-ovo/weather_with_location#readme"
+}
