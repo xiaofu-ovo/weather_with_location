@@ -28,6 +28,7 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'weather_with_location',
       template: './template/index.html',
     }),
     new HotModuleReplacementPlugin({}),

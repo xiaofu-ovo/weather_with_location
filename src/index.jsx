@@ -24,7 +24,7 @@ const routers = [
     component: Home,
     children: [
       {
-        title: '1',
+        title: 'errorpage',
         path: '/:id',
         component: ErrorPage,
       },
@@ -38,7 +38,7 @@ const getAllRouter = (routers, prePath = '') => {
     return [];
   }
   routers.forEach(routerConf => {
-    const { path, component: Component, children } = routerConf;
+    const { path, component: Component, children, title } = routerConf;
     const realPath = `${prePath}${path}`;
     const curRoute = (
       <Route key={realPath} path={realPath} element={<Component />} />
